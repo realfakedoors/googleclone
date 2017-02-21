@@ -1,0 +1,56 @@
+a, .submit_buttons {
+	font-family:Arial;
+	font-size:12px;
+}
+
+#top_bar {
+	display:inline-block;
+	position:absolute;
+	top:15px;
+	right:25px;
+	text-align:right;
+}
+
+#Apps_button {
+	background-image:url(images/apps.png)
+	color:rgb(0, 0, 0);
+	display:inline-block;
+	font-size:13px;
+	outline-color:rgb(0, 0, 0)
+	height:30px;
+	width:30px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+#Apps {
+	
+}
+
+#bottom_bar {
+	display:inline-block;
+	position:absolute;
+	bottom:0px;
+	margin:auto;
+	clear:both;
+}
+
+#Lfooter {
+	left:0px;
+}
+
+#Rfooter {
+	right:0px;
+}
+
+#GoogleLogo {
+	display:block;
+	position:relative;
+	top:175px;
+	margin: auto;
+	clear:both;
+}
+
+.top_bar_buttons {
+	display:inline-block;
+}
