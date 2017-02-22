@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Google</title>
 
-	<link
-		rel="shortcut icon"
-		href="https://www.google.com/favicon.ico"
-		type="image/x-icon"/>
-	<link
-		rel="stylesheet"
-		href="googleclone.css"
-		type="text/css"/>
-	
-	<meta 
-		charset="utf-8"/>
+	<link rel="stylesheet" href="reset.css" type="text/css"/>
+	<link rel="shortcut icon" href="https://www.google.com/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="googleclone.css" type="text/css"/>
+	<meta charset="utf-8"/>
 
 </head>
+
 <body>
-	<div id="top_bar">
-		<div class="top_bar_buttons" id="Gmail"><a href="https://mail.google.com/mail/?tab=wm">Gmail</a></div>
-		<div class="top_bar_buttons" id="Images"><a href="https://www.google.com/imghp">Images</a></div>
-		<div class="top_bar_buttons" id="Apps_button">
-			<a id="Apps" href="https://www.google.com/intl/en/options/" title="Google apps" aria-expanded="false" role ="button" tabindex="0" data-ved="0EL0nCBg">		<img src="images/apps.png"></a>
-		</div>
-		<div class="top_bar_buttons" id="Sign_In"><a href="https://accounts.google.com/ServiceLogin">Sign_In</a></div>
-	</div>
+	<div class="googleclone">
 
-	<img id="GoogleLogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="92" width="272">
 
-	<form id="clone_form">
-		<input id="input_box" type="text"><br>
-		<input id="Google_Search" class="submit_buttons" type="submit">
-		<input id="Feeling_Lucky" class="submit_buttons" type="submit">
-	</form>
-	<div id="bottom_bar">
-		<div id="Lfooter">
-			<div id="Advertising"><a href="">Advertising</a></div>
-			<div id="Business"><a href="">Business</a></div>
-			<div id="About"><a href="">About</a></div>
+		<!-- Top navigation bar -->
+		<div class="nav_buttons">
+			<div class="nav_bar">
+				<ul>
+					<li class="toprightbuttons text-link"><a href="https://mail.google.com/mail/?tab=wm">Gmail</a></li>
+					<li class="toprightbuttons text-link"><a href="https://mail.google.com/mail/?tab=wm">Images</a></li>
+					<li class="toprightbuttons" id="Apps" title="Google apps"><a href="https://mail.google.com/mail/?tab=wm"><img src="http://www.englewoodschools.net/cms/lib8/CO01900647/Centricity/Domain/1009/GoogleAppsIcon.png"/></a></li>
+                    <li id="signin"><a href="https://mail.google.com/mail/?tab=wm">Sign In</a></li>
+				</ul>
+			</div>
 		</div>
-		<div id="Rfooter">
-			<div id="Privacy"><a href="">Privacy</a></div>
-			<div id="Terms"><a href="">Terms</a></div>
-			<div id="Settings"><a href="">Settings</a></div>
+
+
+		<!-- Google logo -->
+		<div class="logocontainer">
+		<div class="googlelogo">
+			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height= "92px" width="272px">
 		</div>
-	</div>
+		</div>
+
+
+		<!-- Search form -->
+		<div class="searchform">
+            <input title="Search" type="text" id="textbox"/>
+			<center id="button_container">
+                <input type="submit" class="searchbuttons" value="Google Search"/>
+                <input type="submit" class="searchbuttons" value="I'm Feeling Lucky"/>
+            </center>
+		</div>
+
+
+		<div class="footer">
+			<!-- Left footer -->
+			<div class="nav_buttons">
+				<div class="bottom_left">
+					<ul>
+						<li class="bottomleftbuttons  text-link"><a href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a></li>
+						<li class="bottomleftbuttons  text-link"><a href="https://www.google.com/services/?fg=1">Business</a></li>
+						<li class="bottomleftbuttons  text-link"><a href="https://www.google.com/intl/en/about.html?fg=1">About</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Right footer -->
+			<div class="nav_buttons">
+				<div class="bottom_right">
+					<ul>
+						<li class="bottomrightbuttons text-link"><a href="https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a></li>
+						<li class="bottomrightbuttons text-link"><a href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a></li>
+						<li class="bottomrightbuttons text-link"><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+					</ul>
+				</div>
+			</div>
+            <div style="clear:both"></div>
+		</div>
 </body>
+</html>
 </html>
 

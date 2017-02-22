@@ -1,56 +1,237 @@
-a, .submit_buttons {
-	font-family:Arial;
-	font-size:12px;
+/* The main page. */
+
+html {
+
+	height:100%
+
 }
 
-#top_bar {
-	display:inline-block;
-	position:absolute;
-	top:15px;
-	right:25px;
-	text-align:right;
-}
+.googleclone {
 
-#Apps_button {
-	background-image:url(images/apps.png)
-	color:rgb(0, 0, 0);
-	display:inline-block;
-	font-size:13px;
-	outline-color:rgb(0, 0, 0)
-	height:30px;
-	width:30px;
-	text-align: left;
-	vertical-align: middle;
-}
-
-#Apps {
-	
-}
-
-#bottom_bar {
-	display:inline-block;
-	position:absolute;
-	bottom:0px;
-	margin:auto;
-	clear:both;
-}
-
-#Lfooter {
-	left:0px;
-}
-
-#Rfooter {
-	right:0px;
-}
-
-#GoogleLogo {
+	font-family:arial, sans-serif;
+	width:100%;
 	display:block;
-	position:relative;
-	top:175px;
-	margin: auto;
-	clear:both;
+	min-height:100%;
+	margin: 0 auto -40px;
+
+
 }
 
-.top_bar_buttons {
-	display:inline-block;
+a:-webkit-any-link {
+    
+    text-decoration:none;
+    color:inherit;
+    
+}
+
+/* All buttons on the page outside of the search form. */
+
+#signin {
+
+	font: bold 13px arial, sans-serif;
+    color: white;
+	background-color: #4285f4;
+	border-radius: 2px;
+	padding: 8px 14px;
+
+
+}
+
+.text-link {
+
+	font-family: arial, sans-serif;
+    color:rgb(75,75,75);
+	font-size: 13px;
+	text-decoration:none;
+	margin: 5px;
+
+}
+
+.nav_buttons a:hover {
+
+	text-decoration:underline;
+
+}
+
+/* The top navigation bar. */
+
+.nav_bar {
+
+	height:50px;
+	text-align:right;
+
+
+}
+
+.nav_bar ul {
+
+	list-style-type:none;
+	margin: 1em 1em 0 0;
+	padding: 0;
+
+
+}
+
+.nav_bar li {
+
+	display:inline;
+    margin:5px;
+
+}
+
+.text-link {
+
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	color: rgb(75, 75, 75);
+	text-decoration: none;
+	margin: 0px;
+
+}
+
+.nav_bar a:hover {
+
+	text-decoration: underline;
+
+
+}
+
+
+
+#Apps img{
+
+	vertical-align:middle;
+	height: auto;
+	width: auto;
+	max-height: 30px;
+	max-width: 30px;
+	display: inline-block;
+
+}
+
+/* Google's logo. */
+
+.logocontainer {
+
+	margin: 150px auto 0px auto;
+	width: 300px;
+	height: 93px;
+
+}
+
+.googlelogo img {
+
+	margin: auto;
+	display: block;
+
+}
+
+/* The search form. */
+
+.searchform #textbox {
+
+	display: block;
+	margin: 20px auto;
+
+}
+
+.searchform {
+
+	display: inline;
+
+}
+
+#button_container {
+    
+    padding-top: 0px;
+    
+}
+
+#textbox {
+
+	width:550px;
+    display:block;
+	margin: 350px auto;
+	box-shadow: 0 2px 2px #c5c5c5;
+	border: 1px solid #eee;
+	border-radius: 0;
+    background-color: white;
+    background-image: url("/images/voicelogo.png");
+    background-size: 30px 30px;
+    background-repeat:no-repeat;
+    background-position: right;    
+	line-height: 36px;
+    position:relative;
+
+}
+
+#textbox:hover{
+    
+    box-shadow: 0 8px 8px 0 #c5c5c5;
+    
+}
+
+.searchbuttons {
+
+	opacity: 0.6;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    height: 36px;
+	width: 130px;
+	margin: 0 auto;
+	border-radius: 0;
+	font-family: arial, sans-serif;
+    font-weight: bold;
+
+}
+
+.searchbuttons:hover{
+    
+    opacity: 1;
+    
+}
+
+/* Footer. */
+
+.footer {
+    
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	height:39px;
+	margin:100px 0 0 0;
+
+}
+
+.bottom_left li, .bottom_right li {
+    
+    display:inline;
+    margin:5px;
+    
+}
+
+/* Left footer. */
+
+.bottom_left {
+
+    float:left;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+/* Right footer. */
+
+.bottom_right {
+
+    float:right;
+    padding-right: 20px;
+    padding-top: 10px;
+
 }
